@@ -7,7 +7,7 @@ from venta import *
 connection=pymysql.connect(
             host="127.0.0.1", # si es remota coloca dominio // local tu IP
             user='root',
-            password='Ortiz.007',
+            password='mypassword',
             db='productosdb',)
 
 cursor = connection.cursor()
