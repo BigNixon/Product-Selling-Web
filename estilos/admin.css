@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(243, 240, 240);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+header img{
+    width: 100px;
+}
+header nav ul{
+    list-style: none;
+    color: aliceblue;
+    display: flex;
+}
+header nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header nav ul li{
+    padding: 10px;
+    margin: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(142, 181, 255);
+    margin-bottom: 10px;
+}
