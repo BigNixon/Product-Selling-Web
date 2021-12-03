@@ -4,7 +4,7 @@
 class venta:
 
     def __init__(self,prod,prec,cant):
-        self.producto=prod
+        self.producto = prod
         self.precio=prec
         self.cantidad=cant
     
