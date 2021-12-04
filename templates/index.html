@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pgaaaa</title>
+    <title>Funko tienda</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
 </head>
 <body>
     <header>
         <a href="index.html">
-            <img src="https://1000marcas.net/wp-content/uploads/2019/12/meta-logo.png" alt="LOGO">
+            <img src="https://d2i9ogginaqdr5.cloudfront.net/cmsstatic/pop%20exclusive.png" alt="LOGO">
         </a>
+        <h1 style="text-align:center;font-family:Times;color:#FFFFFF;">Funko Store</h1>
         <nav>
             <ul>
                 <li>
@@ -29,144 +30,146 @@
     </header>
     <main>
         <section class="productos-container">
-            <fieldset>
+            <fieldset id = "funko-1">
                 <figure>
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e03ecef81a64126bcecab58011051d8_9366/Zapatillas_Superstar_Bold_Mujer_Blanco_FV3336_01_standard.jpg" alt="Zapatillas adidas">
+                    <img src="https://m.media-amazon.com/images/I/71NhcaHbYGL._AC_SL1200_.jpg" alt="Funko Bugs bunny" width="300" height="300">
                     <Figcaption>
-                        Zapatillas Superstar Bold
+                        <FONT FACE="Helvética">Funko POP Space Jam Bugs Bunny</FONT>
                     </Figcaption>
                 </figure>
                 <div class="precio">
-                    <p>Precio <b>S/. 533</b></p>
-                    <form action="">
+                    <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 62.99</FONT></b></p>
+                    <form action="{{url_for('index')}}" method="post" >
                         <label for="form-producto-1"></label>
-                        <p>Realizar pedido</p>
+                        <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
                         <input class="cantidad" type="number" min="0">
-                        <input class="enviar" type="submit" value="añadir al carrito" >
+                        <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
-            </fieldset><br><br>
+            </fieldset><br><br> 
 
             <fieldset>
                 <figure>
-                    <img src="https://cdn.shopify.com/s/files/1/0057/8630/4600/products/FU5305lg_580x.jpg?v=1625782294" alt="Funko Luffy One Piece">
+                    <img src="https://mifunko.com/3926-large_default/figura-pop-space-jam-2-daffy-duck.jpg" alt="Funko Pato Lucas" width="300" height="300">
                     <Figcaption>
-                        One Piece Monkey D. Luffy Funko Pop
+                        <FONT FACE="Helvética">Funko POP Space Jam Pato Lucas</FONT>
                     </Figcaption>
                 </figure>
                 <div class="precio">
-                    <p>Precio <b>S/. 59.99</b></p>
+                    <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 65</FONT></b></p>
                     <form action="">
                         <label for="form-producto-1"></label>
-                        <p>Realizar pedido</p>
+                        <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
                         <input class="cantidad" type="number" min="0">
-                        <input class="enviar" type="submit" value="añadir al carrito" >
+                        <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
             </fieldset><br><br>
             <fieldset>
                 <figure>
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e03ecef81a64126bcecab58011051d8_9366/Zapatillas_Superstar_Bold_Mujer_Blanco_FV3336_01_standard.jpg" alt="Zapatillas adidas">
+                    <img src="https://www.hakuma-shop.com/images/com_hikashop/upload/thumbnails/800x800f/img_87991_29d8790daae33585a510b574704d16e8_1.jpg" alt="Funko Taz"  width="300" height="300">
                     <Figcaption>
-                        Zapatillas Superstar Bold
+                        <FONT FACE="Helvética">Funko POP Space Jam Taz</FONT>                   
                     </Figcaption>
                 </figure>
                 <div class="precio">
-                    <p>Precio <b>S/. 533</b></p>
+                    <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 79.99</FONT></b></p>
                     <form action="">
                         <label for="form-producto-1"></label>
-                        <p>Realizar pedido</p>
+                        <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
                         <input class="cantidad" type="number" min="0">
-                        <input class="enviar" type="submit" value="añadir al carrito" >
+                        <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
             </fieldset><br><br>
             <fieldset>
                 <figure>
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e03ecef81a64126bcecab58011051d8_9366/Zapatillas_Superstar_Bold_Mujer_Blanco_FV3336_01_standard.jpg" alt="Zapatillas adidas">
+                    <img src="https://www.funkotienda.com/wp-content/uploads/2017/03/funko-pop-space-jam-marvin-the-martian.jpg" alt="Funko POP Marvin the martian" width="300" height="300">
                     <Figcaption>
-                        Zapatillas Superstar Bold
+                        <FONT FACE="Helvética">Funko POP Space Jam Marvin the martian</FONT> 
                     </Figcaption>
                 </figure>
                 <div class="precio">
-                    <p>Precio <b>S/. 533</b></p>
+                    <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 59.99</FONT></b></p>
                     <form action="">
                         <label for="form-producto-1"></label>
-                        <p>Realizar pedido</p>
+                        <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
                         <input class="cantidad" type="number" min="0">
-                        <input class="enviar" type="submit" value="añadir al carrito" >
+                        <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
             </fieldset><br><br>
             <fieldset>
                 <figure>
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e03ecef81a64126bcecab58011051d8_9366/Zapatillas_Superstar_Bold_Mujer_Blanco_FV3336_01_standard.jpg" alt="Zapatillas adidas">
+                    <img src="https://cdn.shopify.com/s/files/1/0524/3109/3941/products/FunkoPOP_MoviesSpaceJamANewLegacyPorkyPigFunkoShopExclusive_872x.jpg?v=1623364554" alt="Funko Porky Pig" width="300" height="300">
                     <Figcaption>
-                        Zapatillas Superstar Bold
+                        <FONT FACE="Helvética">Funko POP Space Jam Porky Pig</FONT> 
                     </Figcaption>
                 </figure>
                 <div class="precio">
-                    <p>Precio <b>S/. 533</b></p>
+                    <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 99.99</FONT></b></p>
                     <form action="">
                         <label for="form-producto-1"></label>
-                        <p>Realizar pedido</p>
+                        <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
                         <input class="cantidad" type="number" min="0">
-                        <input class="enviar" type="submit" value="añadir al carrito" >
+                        <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
             </fieldset><br><br>
             <fieldset>
                 <figure>
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e03ecef81a64126bcecab58011051d8_9366/Zapatillas_Superstar_Bold_Mujer_Blanco_FV3336_01_standard.jpg" alt="Zapatillas adidas">
+                    <img src="https://lafrikileria.com/87645-thickbox_default/funko-pop-silvestre-y-piolin-space-jam-2.jpg" alt="Funko Silvestre y piolin" width="300" height="300">
                     <Figcaption>
-                        Zapatillas Superstar Bold
+                        <FONT FACE="Helvética">Funko POP Space Jam Silvestre y Piolin</FONT> 
                     </Figcaption>
                 </figure>
                 <div class="precio">
-                    <p>Precio <b>S/. 533</b></p>
+                    <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 39.99</FONT></b></p>
                     <form action="">
                         <label for="form-producto-1"></label>
-                        <p>Realizar pedido</p>
+                        <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
                         <input class="cantidad" type="number" min="0">
-                        <input class="enviar" type="submit" value="añadir al carrito" >
+                        <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
             </fieldset><br><br>
             <fieldset>
                 <figure>
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e03ecef81a64126bcecab58011051d8_9366/Zapatillas_Superstar_Bold_Mujer_Blanco_FV3336_01_standard.jpg" alt="Zapatillas adidas">
+                    <img src="https://i.ebayimg.com/images/g/tlUAAOSwbLJeRZxs/s-l640.jpg" alt="Funko Swackhammer" width="300" height="300">
                     <Figcaption>
-                        Zapatillas Superstar Bold
+                        <FONT FACE="Helvética">Funko POP Space Jam Swackhammer</FONT> 
                     </Figcaption>
                 </figure>
                 <div class="precio">
-                    <p>Precio <b>S/. 533</b></p>
+                    <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 69.99</FONT></b></p>
                     <form action="">
                         <label for="form-producto-1"></label>
-                        <p>Realizar pedido</p>
+                        <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
                         <input class="cantidad" type="number" min="0">
-                        <input class="enviar" type="submit" value="añadir al carrito" >
+                        <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
             </fieldset><br><br>
             <fieldset>
                 <figure>
-                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7e03ecef81a64126bcecab58011051d8_9366/Zapatillas_Superstar_Bold_Mujer_Blanco_FV3336_01_standard.jpg" alt="Zapatillas adidas">
+                    <img src="https://static.thcdn.com/images/large/original//productimg/1600/1600/12738790-1864856741525391.jpg" alt="Funko Viny" width="300" height="300">
                     <Figcaption>
-                        Zapatillas Superstar Bold
+                        <FONT FACE="Helvética">Funko POP Space Jam Viny</FONT>
                     </Figcaption>
                 </figure>
                 <div class="precio">
-                    <p>Precio <b>S/. 533</b></p>
+                    <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 49.99</FONT></b></p>
                     <form action="">
                         <label for="form-producto-1"></label>
-                        <p>Realizar pedido</p>
+                        <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
                         <input class="cantidad" type="number" min="0" >
-                        <input class="enviar" type="submit" value="añadir al carrito" >
+                        <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
             </fieldset><br><br>
         </section>
     </main>
+    <script src = "{{ url_for('static', filename='index.js') }}" type='module'></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 #########1
 #Clase venta
+from main import *
 
 class venta:
 
@@ -9,10 +10,10 @@ class venta:
         self.cantidad=cant
     
     def venta(self):
-        pass
+        print("Venta exitosa")
 
     def registro_venta(self):
-        pass
+        print("Venta registrada")
 
 #########2
 #Clase pedidos
@@ -25,10 +26,10 @@ class pedidos:
         self.numero_deSoli=numsol
     
     def recibir_pedido(self):
-        pass
+        print("Pedido recibido")
 
     def registro_pedido(self):
-        pass
+        print("Pedido registrado")
 
 #########3
 #Clase producto
@@ -43,10 +44,10 @@ class producto:
         self.cantidad=cantx
     
     def asignacion(self):
-        pass
+        return "INSERT INTO productos(idproductos, nombre,precio,cantidad,proveedor) VALUES(%s,%s,%s,%s,%s)"
 
     def retorno(self):
-        pass
+        print("Devolviendo productos")
 
 #########4
 #Clase almacen
@@ -60,13 +61,14 @@ class almacen(venta,pedidos):
         self.direccion_almacen=direx
 
     def venta(self):
-        pass
+        print("Venta exitosa")
 
     def recibir_pedido(self):
-        pass
+        print("Pedido recibido")
 
     def recibir_pago(self):
-        pass
+        print("Pago recibido")
+
 
 #########5
 #Clase existencias
@@ -80,10 +82,10 @@ class existencias(producto):
         self.cantidad_existencia=canty
 
     def registro_de_venta(self):
-        pass
+        print("Venta Registrada")
 
     def existencias(self):
-        pass
+        print("Existencias")
 
 #########6
 #Clase inventario
@@ -96,10 +98,10 @@ class inventario(producto,pedidos):
         self.numero_solicitud=numsoli
 
     def registro_de_pedido(self):
-        pass
+        print("Registro de pedido")
 
     def existencias(self):
-        pass     
+        print("Existencias")
 
 #########7
 #Clase proveedores
@@ -115,10 +117,11 @@ class proveedores:
         self.nombre_proveedor=nombre_prx
         
     def venta_directa(self):
-        pass
+        print("Venta directa")
 
-    def precios_especiales(self):
-        pass   
+    def pedidos_especiales(self):
+        print("Pedidos especiales")
+   
 
 #######8
 #Clase control
@@ -129,13 +132,14 @@ class control:
         self.productos=proddx
     
     def mant_y_control(self):
-        pass
+        print("Mantenimiento")
 
     def actualizacion(self):
-        pass
+        print("Actualizacion")
 
     def depuracion(self):
-        pass
+        print("Depuracion")
+
 
 #########9
 #Clase administrador
@@ -147,12 +151,13 @@ class administrador(control):
         self.proveedores=prov
           
     def mantenimiento_control(self):
-        pass
+        print("Mantenimiento")
     
     def compra(self):
-        pass
+        print("compra")
 
     def pedido(self):
-        pass
+        print("pedido")
+
 
 

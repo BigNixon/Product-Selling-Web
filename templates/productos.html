@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='productos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="https://d2i9ogginaqdr5.cloudfront.net/cmsstatic/pop%20exclusive.png" alt="LOGO">
+        </a>
+        <h1 style="text-align:center;font-family:Times;color:#FFFFFF;">Funko Store</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="carrito.html">Carrito</a>
+                </li>
+                <li>
+                    <a href="admin.html">Administracion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>PRODUCTOS EN STOCK</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID del producto</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Proveedor</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for productx in producto %}
+                <tr>
+                    <td>{{productx[0]}}</td>
+                    <td>{{productx[1]}}</td>
+                    <td>{{productx[2]}}</td>
+                    <td>{{productx[3]}}</td>
+                    <td>{{productx[4]}}</td>
+                          
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

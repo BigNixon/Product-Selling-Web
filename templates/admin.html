@@ -11,8 +11,9 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="https://1000marcas.net/wp-content/uploads/2019/12/meta-logo.png" alt="LOGO">
+            <img src="https://d2i9ogginaqdr5.cloudfront.net/cmsstatic/pop%20exclusive.png" alt="LOGO">
         </a>
+        <h1 style="text-align:center;font-family:Times;color:#FFFFFF;">Funko Store</h1>
         <nav>
             <ul>
                 <li>
@@ -30,38 +31,41 @@
 
     <main>
         <div class="buttons-container">
-            <button>VER PRODUCTOS EN STOCK</button><br></br>
+            <a href="productos.html">VER PRODUCTOS EN STOCK</a>
+            <br></br>
             <button>VER REGISTRO DE VENTAS</button><br></br>
         </div>
-        <form action="">
+        <form action="{{url_for('guardarproducto')}}" method="post">
             <fieldset>
                 <legend>Adquirir productos</legend>
-                <form action="">
+                
                     <div class="formulario-campo-container">
                         <label for="Nombre-Producto">Ingrese el nombre del producto</label>
-                        <input type="text">
+                        <input required type="text" class="input" placeholder="Nombre_Producto" name="Nombre_Producto" id="Nombre_Producto">
                     </div>
                     <div class="formulario-campo-container">
                         <label for="ID-Producto">Ingrese el ID del producto</label>
-                        <input type="text">
+                        <input required type="text" class="input" placeholder="id_Producto" name="id_Producto" id="id_Producto">
                     </div>
                     <div class="formulario-campo-container">
                         <label for="Precio-Producto">Ingrese el precio del producto</label>
-                        <input type="text">
+                        <input required type="text" class="input" placeholder="precio_Producto" name="precio_Producto" id="precio_Producto">
                     </div>
                     <div class="formulario-campo-container">
                         <label for="Cantidad-Producto">Ingrese la cantidad de producto</label>
-                        <input type="text">
+                        <input required type="text" class="input" placeholder="cant_Producto" name="cant_Producto" id="cant_Producto">
                     </div>
                     <div class="formulario-campo-container">
                         <label for="Proveedor-Producto">Ingrese el proveedor del producto</label>
-                        <input type="text">
+                        <input required type="text" class="input" placeholder="proveedor_Producto" name="proveedor_Producto" id="proveedor_Producto">
                     </div>
-                    <input type="submit">
-                </form>
+                    <button type="submit" class="button is-success mt-2">Guardar</button>
+                    
+                
             </fieldset>
         </form>
     </main>
 
 </body>
+
 </html>
