@@ -77,7 +77,7 @@ def administracion():
 def comprobar():
     usuario = request.form["usuario"]
     contrasenia = request.form["contrasenia"]
-    if(usuario=="GOD" and contrasenia=="KCHAME"):
+    if(usuario=="GOD" and contrasenia=="muchasgracias"):
         return render_template('admin.html')
     else:
         return render_template('login.html')
@@ -121,19 +121,19 @@ def pagarcarrito():
     pago = int(request.form["pago"])
     nombre= request.form["nombre"]
     productos_totales= ""
-    cantidad_pedidos = [0,0,0,0,0,0,0,0,0]
-    cantidad_productos = [0,0,0,0,0,0,0,0,0]
+    cantidad_pedidos = [0,0,0,0,0,0,0,0,0,0]
+    cantidad_productos = [0,0,0,0,0,0,0,0,0,0]
     if(pago >= precio_total ):
         numventa=numventa+1
         for p in carrito:
             productos_totales= productos_totales+str(p[2])+" "+ "producto "+", "
             cantidad_pedidos[p[0]] = p[2]
         for p in productos:
+            if(p[0]>7):
+                break
             cantidad_productos[p[0]] = p[3]
-
         cursor.execute("INSERT INTO ventas(idventa, comprador,producto,precio_total) VALUES(%s,%s,%s,%s)",(numventa,nombre,productos_totales,precio_total))
         connection.commit()    
-        
         for i in range(1,9):
             cantidad_productos[i] -= cantidad_pedidos[i]
             cursor.execute("UPDATE `productosdb`.`productos` SET `cantidad` = '%s' WHERE (`idproductos` = '%s')",(cantidad_productos[i],i))
