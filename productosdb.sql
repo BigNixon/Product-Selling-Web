@@ -1,4 +1,4 @@
-create database productosDB;
+create database productosdb;
 
 
 ############### CREACION DE LA TABLA PRODUCTOS ###########################
@@ -9,30 +9,28 @@ CREATE TABLE `productosdb`.`productos` (
   `cantidad` INT NOT NULL,
   `proveedor` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idproductos`));
-  
-  #AÑADIENDO PRODUCTOS
-		INSERT INTO `productosdb`.`productos` (`idproductos`, `nombre`, `precio`, `cantidad`, `proveedor`) VALUES ('1', 'funko1', '59', '20', 'china');
-		INSERT INTO `productosdb`.`productos` (`idproductos`, `nombre`, `precio`, `cantidad`, `proveedor`) VALUES ('2', 'luffy', '75', '50', 'taiwan');
-
 
 ################### CREACION DE LA TABLA REGISTROS ############################
-CREATE TABLE `productosdb`.`registro_ventas` (
+CREATE TABLE `productosdb`.`ventas` (
   `idventa` INT NOT NULL AUTO_INCREMENT,
   `comprador` VARCHAR(45) NOT NULL,
-  `destino` VARCHAR(45) NOT NULL,
-  `idproductos` INT NOT NULL,
-  PRIMARY KEY (`idventa`),
-  INDEX `fk_idproductos_idx` (`idproductos` ASC) VISIBLE,
-  CONSTRAINT `fk_idproductos`
-    FOREIGN KEY (`idproductos`)
-    REFERENCES `productosdb`.`productos` (`idproductos`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+  `producto` VARCHAR(45) NOT NULL,
+  `precio_total` INT NOT NULL,
+  PRIMARY KEY (`idventa`));
+  
+								
 
-	#AÑADIENDO REGISTROS
-    INSERT INTO `productosdb`.`registro_ventas` (`idventa`, `comprador`, `destino`, `idproductos`) VALUES ('1', 'marco', 'lima', '2');
-	INSERT INTO `productosdb`.`registro_ventas` (`idventa`, `comprador`, `destino`, `idproductos`) VALUES ('2', 'elgod', 'callao', '1');
+################### CREACION DE LA TABLA carrito ############################
+CREATE TABLE `productosdb`.`carrito` (
+  `idproducto` INT NOT NULL AUTO_INCREMENT,
+  `producto` VARCHAR(45) NOT NULL,
+  `cantidad` INT NOT NULL,
+  `precio` INT NOT NULL,
+  `precio_total` INT NOT NULL,
+  PRIMARY KEY (`idproducto`));
+  
 
 ################ VISUALIZANDO LAS TABLAS #######################
-SELECT * FROM	productos
-SELECT * FROM	registro_ventas
+#SELECT * FROM	productos;
+#SELECT * FROM	registro_ventas;
+DROP DATABASE productosdb

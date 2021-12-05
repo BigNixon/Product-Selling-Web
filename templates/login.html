@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="https://d2i9ogginaqdr5.cloudfront.net/cmsstatic/pop%20exclusive.png" alt="LOGO">
+        </a>
+        <h1 style="text-align:center;font-family:Times;color:#FFFFFF;">Funko Store</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="carrito.html">Carrito</a>
+                </li>
+                <li>
+                    <a href="login.html">Administracion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <center>
+        <form action="{{url_for('comprobar')}}" method="post">
+            <input  type="text" name="usuario" id="usuario" for="usuario" placeholder="Usuario"> <br></br>
+            <input type="password" name="contrasenia" id="contrasenia" for="contrasenia" placeholder="contraseña"><br></br>
+            <input class="btn btn-dark" type="submit">
+        </form>
+    </center>
+    </main>
+    
+</body>
+</html>

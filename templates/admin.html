@@ -7,7 +7,7 @@
     <title>Administracion</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
-</head>
+</head> 
 <body>
     <header>
         <a href="index.html">
@@ -23,7 +23,7 @@
                     <a href="carrito.html">Carrito</a>
                 </li>
                 <li>
-                    <a href="admin.html">Administracion</a>
+                    <a href="login.html">Administracion</a>
                 </li>
             </ul>
         </nav>
@@ -33,7 +33,8 @@
         <div class="buttons-container">
             <a href="productos.html">VER PRODUCTOS EN STOCK</a>
             <br></br>
-            <button>VER REGISTRO DE VENTAS</button><br></br>
+            <a href="registros.html">VER REGISTRO DE VENTAS</a>
+            <br></br>
         </div>
         <form action="{{url_for('guardarproducto')}}" method="post">
             <fieldset>

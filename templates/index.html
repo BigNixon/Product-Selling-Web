@@ -18,19 +18,19 @@
             <ul>
                 <li>
                     <a href="index.html">Inicio</a>
-                </li>
+                </li>                                                                                       
                 <li>
                     <a href="carrito.html">Carrito</a>
                 </li>
                 <li>
-                    <a href="admin.html">Administracion</a>
+                    <a href="login.html">Administracion</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="productos-container">
-            <fieldset id = "funko-1">
+            <fieldset id = "funko1">
                 <figure>
                     <img src="https://m.media-amazon.com/images/I/71NhcaHbYGL._AC_SL1200_.jpg" alt="Funko Bugs bunny" width="300" height="300">
                     <Figcaption>
@@ -39,12 +39,12 @@
                 </figure>
                 <div class="precio">
                     <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 62.99</FONT></b></p>
-                    <form action="{{url_for('index')}}" method="post" >
+                    <form action="{{url_for('agregandoP1')}}" method="post" >
                         <label for="form-producto-1"></label>
                         <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
-                        <input class="cantidad" type="number" min="0">
+                        <input class="cantidad1" type="number" min="0" name="cantidad1" id="cantidad1">
                         <input class="enviar" type="submit" value="Agregar al carrito" >
-                    </form>
+                    </form>     
                 </div>
             </fieldset><br><br> 
 
@@ -57,10 +57,10 @@
                 </figure>
                 <div class="precio">
                     <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 65</FONT></b></p>
-                    <form action="">
-                        <label for="form-producto-1"></label>
+                    <form action="{{url_for('agregandoP2')}}" method="post" >
+                        <label for="form-producto-2"></label>
                         <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
-                        <input class="cantidad" type="number" min="0">
+                        <input class="cantidad2" type="number" min="0" name="cantidad2" id="cantidad">
                         <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
@@ -74,10 +74,10 @@
                 </figure>
                 <div class="precio">
                     <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 79.99</FONT></b></p>
-                    <form action="">
+                    <form action="{{url_for('agregandoP3')}}" method="post" >
                         <label for="form-producto-1"></label>
                         <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
-                        <input class="cantidad" type="number" min="0">
+                        <input class="cantidad3" type="number" min="0" name="cantidad3" id="cantidad">
                         <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
@@ -91,10 +91,10 @@
                 </figure>
                 <div class="precio">
                     <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 59.99</FONT></b></p>
-                    <form action="">
+                    <form action="{{url_for('agregandoP4')}}" method="post" >
                         <label for="form-producto-1"></label>
                         <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
-                        <input class="cantidad" type="number" min="0">
+                        <input class="cantidad4" type="number" min="0" name="cantidad4" id="cantidad">
                         <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
@@ -108,10 +108,10 @@
                 </figure>
                 <div class="precio">
                     <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 99.99</FONT></b></p>
-                    <form action="">
+                    <form action="{{url_for('agregandoP5')}}" method="post" >
                         <label for="form-producto-1"></label>
                         <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
-                        <input class="cantidad" type="number" min="0">
+                        <input class="cantidad5" type="number" min="0" name="cantidad5" id="cantidad">
                         <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
@@ -125,10 +125,10 @@
                 </figure>
                 <div class="precio">
                     <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 39.99</FONT></b></p>
-                    <form action="">
+                    <form action="{{url_for('agregandoP6')}}" method="post" >
                         <label for="form-producto-1"></label>
                         <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
-                        <input class="cantidad" type="number" min="0">
+                        <input class="cantidad6" type="number" min="0" name="cantidad6" id="cantidad">
                         <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
@@ -142,10 +142,10 @@
                 </figure>
                 <div class="precio">
                     <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 69.99</FONT></b></p>
-                    <form action="">
+                    <form action="{{url_for('agregandoP7')}}" method="post" >
                         <label for="form-producto-1"></label>
                         <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
-                        <input class="cantidad" type="number" min="0">
+                        <input class="cantidad7" type="number" min="0" name="cantidad7" id="cantidad">
                         <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
@@ -159,17 +159,17 @@
                 </figure>
                 <div class="precio">
                     <p><FONT FACE="Helvética">Precio:</FONT> <b><FONT FACE="Helvética">S/. 49.99</FONT></b></p>
-                    <form action="">
+                    <form action="{{url_for('agregandoP8')}}" method="post" >
                         <label for="form-producto-1"></label>
                         <p><FONT FACE="Helvética">Realizar Pedido</FONT></p>
-                        <input class="cantidad" type="number" min="0" >
+                        <input class="cantidad8" type="number" min="0" name="cantidad8" id="cantidad">
                         <input class="enviar" type="submit" value="Agregar al carrito" >
                     </form>
                 </div>
             </fieldset><br><br>
         </section>
     </main>
-    <script src = "{{ url_for('static', filename='index.js') }}" type='module'></script>
+   
 </body>
 
 </html>

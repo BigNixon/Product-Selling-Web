@@ -62,3 +62,36 @@ fieldset img{
 main{
     color: #010810;
 }
+
+
+/*boton*/
+main .confirmacion{
+	border-radius: 2px;
+    color: #FFFFFF;
+    font-family: Times New Roman;
+    font-size: 20px;
+    font-weight: 100;
+    padding:13px 32px;
+    background-color: #010810;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+    height: 50px;
+}
+main .confirmacion:hover {
+	background:linear-gradient(to bottom, rgb(132, 138, 155) 5%, rgb(125, 137, 168) 100%);
+	background-color:rgb(77, 80, 92);
+}
+main .confirmacion:active {
+	position:relative;
+	top:1px;
+}
+main a{
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
